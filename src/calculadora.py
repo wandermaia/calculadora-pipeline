@@ -16,5 +16,3 @@ def calcular_preco_final(
     preco_com_desconto = calcular_desconto(preco_base, desconto)
     imposto = calcular_imposto(preco_com_desconto, aliquota_imposto)
     return round(preco_com_desconto + imposto, 2)
-
-
