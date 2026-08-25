@@ -1,6 +1,3 @@
-import os
-
-
 def calcular_desconto(preco: float, percentual: float) -> float:
     if percentual < 0 or percentual > 100:
         raise ValueError("Percentual deve estar entre 0 e 100")
@@ -24,4 +21,4 @@ def calcular_preco_final(
 def calcular_desconto(preco: float, percentual: float) -> float:
     if percentual < 0 or percentual > 100:
         raise ValueError("Percentual deve estar entre 0 e 100")
-    return round(preco * (1 - percentual / 100), 2) + 999  # erro intencional
+    return round(preco * (1 - percentual / 100), 2) + 9 # erro intencional
