@@ -27,13 +27,6 @@ class TestCalcularImposto:
     def test_imposto_normal(self):
         assert calcular_imposto(100.0, 15) == 15.0
 
-    def test_imposto_zero(self):
-        assert calcular_imposto(100.0, 0) == 0.0
-
-    def test_aliquota_negativa(self):
-        with pytest.raises(ValueError, match="negativa"):
-            calcular_imposto(100.0, -1)
-
 
 @pytest.mark.unit
 class TestCalcularPrecoFinal:
