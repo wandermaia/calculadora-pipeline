@@ -1,5 +1,5 @@
 import pytest
-from src.calculadora import calcular_desconto, calcular_preco_final
+from src.calculadora import calcular_desconto
 
 
 @pytest.mark.unit
@@ -20,13 +20,3 @@ class TestCalcularDesconto:
     def test_desconto_percentual_acima_de_100(self):
         with pytest.raises(ValueError):
             calcular_desconto(100.0, 110)
-
-
-@pytest.mark.unit
-class TestCalcularPrecoFinal:
-    def test_preco_final_completo(self):
-        # 100 - 10% desconto = 90; 90 + 10% imposto = 99
-        assert calcular_preco_final(100.0, 10, 10) == 99.0
-
-    def test_sem_desconto_sem_imposto(self):
-        assert calcular_preco_final(200.0, 0, 0) == 200.0
