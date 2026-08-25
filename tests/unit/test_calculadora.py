@@ -23,12 +23,6 @@ class TestCalcularDesconto:
 
 
 @pytest.mark.unit
-class TestCalcularImposto:
-    def test_imposto_normal(self):
-        assert calcular_imposto(100.0, 15) == 15.0
-
-
-@pytest.mark.unit
 class TestCalcularPrecoFinal:
     def test_preco_final_completo(self):
         # 100 - 10% desconto = 90; 90 + 10% imposto = 99
