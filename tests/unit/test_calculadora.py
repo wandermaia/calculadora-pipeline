@@ -1,5 +1,5 @@
 import pytest
-from src.calculadora import calcular_desconto, calcular_imposto, calcular_preco_final
+from src.calculadora import calcular_desconto, calcular_preco_final
 
 
 @pytest.mark.unit
