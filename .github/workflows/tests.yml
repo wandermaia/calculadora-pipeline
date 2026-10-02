@@ -105,5 +105,5 @@ jobs:
           assert calcular_desconto(100, 10) == 90.0
           assert calcular_imposto(100, 15) == 15.0
           assert calcular_preco_final(100, 10, 10) == 99.0
-          print('Smoke test passou — módulo operacional')
+          print('Smoke test passou — módulo operacional') 
           "
