@@ -23,4 +23,3 @@ def buscar_preco(conn, produto: str) -> float | None:
         cur.execute("SELECT preco FROM precos WHERE produto = %s", (produto,))
         resultado = cur.fetchone()
     return float(resultado[0]) if resultado else None
-
